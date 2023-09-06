@@ -49,10 +49,25 @@ nav {
     transition: background-color 0.2s ease;
   }
   
-  #about-item:hover {
-    background-color: #e95459;
-    color:white;
+  #about-item {
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: large;
+    padding: 4px 6px;
+    color: #fff !important;
   }
+  
+    #about-item::after {
+    max-width: 100%;
+    height: 2px;
+    display: block;
+    content: "";
+    background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+    opacity: 1;
+    margin-bottom: -6px;
+    margin-top: 1px;
+  }
+
   
   #tutoring-item:hover {
     background-color: #ff9a52;
