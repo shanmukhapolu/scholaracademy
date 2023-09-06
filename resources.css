@@ -1,0 +1,161 @@
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin:-8px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 45px;
+    width:45px;
+  }
+  
+  .workmark {
+    font-size: 23px;
+    font-family: DM Sans;
+    margin-left: 1rem;
+  }
+  
+  .navbar-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+  }
+  
+  .navbar-items li {
+    margin-left: 1rem;
+  }
+  
+  .navbar-items li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  #about-item:hover {
+    background-color: #eb3f45;
+    color:white;
+  }
+  
+  #tutoring-item:hover {
+    background-color: #ff9a52;
+    color:white;
+  }
+  
+  #courses-item:hover {
+    background-color: #ffe54f;
+    color:white;
+  }
+  
+  #resources-item {
+    background-color: #5dbb63;
+    color:white;
+  }
+  #resources-item:hover {
+    background-color: #5dbb63;
+    color:white;
+  }
+  
+  #coding-item:hover {
+    background-color: #63c5da;
+    color:white;
+  }
+  
+  #volunteer-opportunities-item:hover {
+    background-color: #fc94af;
+    color:white;
+  }
+  
+  #test-prep-item:hover {
+    background-color: #e39ff6;
+    color:white;
+  }
+  
+  .toggle-button {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-items {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  
+    .navbar-items li {
+      margin: 0;
+      border-top: 1px solid #f2f2f2;
+    }
+  
+    .navbar-items a {
+      display: block;
+      padding: 1rem;
+    }
+  
+    .toggle-button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px auto;
+      transition: transform 0.2s ease;
+    }
+  
+    .bar:first-child {
+      transform: translateY(-6px);
+    }
+  
+    .bar:last-child {
+      transform: translateY(6px);
+    }
+  
+    .navbar-open .bar:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .navbar-open .bar:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  
+    .navbar-open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-open .navbar-items {
+      display: flex;
+    }
+  }
