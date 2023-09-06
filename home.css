@@ -54,7 +54,7 @@ nav {
     font-weight: 600;
     font-size: large;
     padding: 4px 6px;
-    color: #fff !important;
+    color: #000000 !important;
   }
   
     #about-item::after {
