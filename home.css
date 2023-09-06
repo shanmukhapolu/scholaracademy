@@ -67,7 +67,10 @@ nav {
     margin-bottom: -6px;
     margin-top: 1px;
   }
-
+  
+    .bn40div {
+    display: flex;
+  }
   
   #tutoring-item:hover {
     background-color: #ff9a52;
