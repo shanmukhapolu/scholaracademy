@@ -150,7 +150,8 @@ nav {
     }
   }
   
-  .content {
+  #algebra-heading {
+    text-align:center;
     padding:20px;
     font-family:Manrope;
   }
