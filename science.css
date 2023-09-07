@@ -150,135 +150,67 @@ nav {
   }
 }
 
-#science-heading {
-  text-align: center;
-  padding:20px;
-  font-family:Manrope;
-  }
-  
-  .science-topics {
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 50px;
-  }
-  
-  .biology-card {
-  background-color: #54ef69 ;
-  box-shadow: 0 0px 10px rgba(123, 123, 123, 0.25);
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 300px;
+}
+
+.card h2 {
+  font-size: 3rem;
+  font-family: Poppins, sans-serif;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 200px;
   width: 200px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  }
-  
-  .chemistry-card {
-  background-color: #6bd7f5;
-  box-shadow: 0 0px 10px rgba(123, 123, 123, 0.25);
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  width: 200px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  }
-  
-  .physics-card {
-  background-color: #c274f0;
-  box-shadow: 0 0px 10px rgba(123, 123, 123, 0.25);
-  border-radius: 10px;
-  padding: 30px;
-  margin: 20px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  width: 200px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  }
-  
-  
-  .biology-card h2 {
-  font-size: 28px;
-  color: #353535;
-  margin-bottom: 10px;
-  }
-  
-  .chemistry-card h2 {
-  font-size: 28px;
-  color: #353535;
-  margin-bottom: 10px;
-  }
-  
-  .physics-card h2 {
-  font-size: 28px;
-  color: #353535;
-  margin-bottom: 10px;
-  }
-  
-  .calculus-card h2 {
-  font-size: 28px;
-  color: #353535;
-  margin-bottom: 10px;
-  }
-  
-  .biology-card button {
-  background-color: #ffffff00;
-  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-family: DM Sans, sans-serif;
+  margin: 1rem 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.card button {
+  background-color: #f21885;
   border: none;
-  padding: 10px;
-  margin-left:90px;
-  margin-right:90px;
-  font-size: 18px;
+  border-radius: 0.5rem;
+  color: #fff;
   cursor: pointer;
+  font-size: 1.2rem;
+  font-family: Poppins, sans-serif;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
   transition: background-color 0.2s ease;
-  }
-  
-  .chemistry-card button {
-  background-color: #ffffff00;
-  color: #000000;
-  border: none;
-  padding: 10px;
-  margin-left:90px;
-  margin-right:90px;  
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  }
-  
-  .physics-card button {
-  background-color: #ffffff00;
-  color: #000000;
-  border: none;
-  padding: 10px;
-  margin-left:90px;
-  margin-right:90px;  
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  }
-  
-  .calculus-card button {
-  background-color: #ffffff00;
-  color: #000000;
-  border: none;
-  padding: 10px;
-  margin-left:90px;
-  margin-right:90px;  
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  }
-  
+}
+
+.card button:hover {
+  background-color: #e00072;
+}
+
+.biology {
+  background-color: #c1e1c1;
+}
+
+.physics {
+  background-color: #c1c1e1;
+}
+
+.chemistry {
+  background-color: #e1c1c1;
+}
