@@ -150,6 +150,12 @@ nav {
   }
 }
 
+#science-heading {
+  text-align: center;
+  padding:20px;
+  font-family:Manrope;
+}
+
 .card {
   background-color: #fff;
   border-radius: 1rem;
