@@ -204,32 +204,32 @@ nav {
   }
 
   .unit {
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .unit .toggle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    margin-right: 10px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .unit .toggle:hover {
-    background-color: #d1d1d1;
-  }
-  
-  .skills {
-    display: none;
-    margin-left: 20px;
-  }
-  
-  .skills.visible {
-    display: block;
-  }
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.unit .toggle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.unit .toggle:hover {
+  background-color: #d1d1d1;
+}
+
+.skills {
+  display: none;
+  margin-left: 20px;
+}
+
+.skills.visible {
+  display: block;
+}
