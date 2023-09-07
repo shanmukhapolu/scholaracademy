@@ -1,235 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #404040;
+  background-color: #f7f8fa;
+}
+
 nav {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin:-8px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 45px;
-    width:45px;
-  }
-  
-  .workmark {
-    font-size: 23px;
-    font-family: DM Sans;
-    margin-left: 1rem;
-  }
-  
-  .navbar-items {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    font-family:Poppins;
-  }
-  
-  .navbar-items li {
-    margin-left: 1rem;
-  }
-  
-  .navbar-items li:first-child {
-    margin-left: 0;
-  }
-  
-  .navbar-items a {
-    text-decoration: none;
-    color: #353535;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px;
-    border-radius: 0.25rem;
-    transition: background-color 0.2s ease;
-  }
-  
-  #about-item:hover {
-    background-color: #e95459;
-    color:white;
-  }
-  
-  #math-item:hover {
-    background-color: #ff9a52;
-    color:white;
-  }
-  
-  #science-item:hover {
-    background-color: #ffe54f;
-    color:white;
-  }
-  
-  #reading-writing-item:hover {
-    background-color: #5dbb63;
-    color:white;
-  }
-  
-  #homework-help-item:hover {
-    background-color: #63c5da;
-    color:white;
-  }
-  
-  #test-prep-item:hover {
-    background-color: #fc94af;
-    color:white;
-  }
-  
-  .toggle-button {
-    display: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar-items {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 4rem;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-  
-    .navbar-items li {
-      margin: 0;
-      border-top: 1px solid #f2f2f2;
-    }
-  
-    .navbar-items a {
-      display: block;
-      padding: 1rem;
-    }
-  
-    .toggle-button {
-      display: block;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-  
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background-color: #333;
-      margin: 5px auto;
-      transition: transform 0.2s ease;
-    }
-  
-    .bar:first-child {
-      transform: translateY(-6px);
-    }
-  
-    .bar:last-child {
-      transform: translateY(6px);
-    }
-  
-    .navbar-open .bar:first-child {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-  
-    .navbar-open .bar:last-child {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  
-    .navbar-open .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .navbar-open .navbar-items {
-      display: flex;
-    }
-  }
-  
-  #algebra-heading {
-    text-align:center;
-    padding:20px;
-    font-family:Manrope;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
-  .card {
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .info-cards {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .info-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-basis: calc(25% - 10px);
-    padding: 20px;
-  }
-  
-  .syllabus {
-    margin-top: 20px;
-  }
-  
-  .syllabus ul {
-    list-style: none;
+nav .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+nav .logo img {
+  height: 50px;
+  width: 50px;
+}
+
+nav .logo span {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 15px;
+  color: #212121;
+}
+
+nav .nav-toggle {
+  display: none;
+}
+
+nav .nav-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+nav .nav-menu li {
+  list-style: none;
+}
+
+nav .nav-menu a {
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  line-height: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+nav .nav-menu a:hover {
+  color: #e95459;
+}
+
+@media screen and (max-width: 768px) {
+  nav .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
     padding: 0;
-  }
-  
-  .syllabus ul li {
-    margin-bottom: 20px;
-  }
-  
-  .syllabus h3 {
-    margin-top: 0;
-  }
-  
-  .syllabus ol {
-    margin-left: 20px;
-  }
-  
-  .syllabus ol li {
-    margin-bottom: 10px;
+    cursor: pointer;
+    z-index: 2000;
   }
 
-  .unit {
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .unit .toggle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    margin-right: 10px;
+  nav .nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #212121;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    position: relative;
     transition: background-color 0.2s ease;
   }
-  
-  .unit .toggle:hover {
-    background-color: #d1d1d1;
+
+  nav .nav-toggle span:last-child {
+    margin-bottom: 0;
   }
-  
-  .skills {
+
+  nav .nav-menu {
     display: none;
-    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 50px 20px 20px;
+    z-index: 1500;
   }
-  
-  .skills.visible {
+
+  nav .nav-menu li {
+    margin: 0;
+  }
+
+  nav .nav-menu a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #212121;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: color 0.2s ease;
+  }
+
+  nav .nav-menu a:hover {
+    color: #e95459;
+  }
+
+  /* Show menu when toggle is clicked */
+  nav .nav-toggle:focus + .nav-menu {
     display: block;
   }
+}
+
+.header {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #212121;
+}
+
+.header-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7c7c7c;
+}
+
+.section {
+  padding: 80px 0;
+  background-color: #f7f8fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #212121;
+  text-align: center;
+}
+
+.syllabus-toggle {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 26px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.syllabus-toggle:hover {
+  background-color: #e95459;
+}
+
+.syllabus-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.syllabus-skills {
+  display: none;
+  margin: 0;
+  padding-left: 30px;
+  list-style: none;
+}
+
+.syllabus-skills.visible {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .syllabus-skills {
+    padding-left: 20px;
+  }
+}
+
+.syllabus-item:last-child .syllabus-title {
+  margin-bottom: 0;
+}
