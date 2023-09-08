@@ -1,42 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Algebra</title>
-    <link rel="stylesheet" href="algebra.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-         <h1 class="header__title">Learn Algebra</h1>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <div class="card card--description">
-          <h2 class="card__title">Course Description</h2>
-          <p class="card__text">
-            This algebra course is perfect for beginners who want to learn the basics of algebra. It covers a wide range of topics including arithmetic operations, solving equations, graphing linear equations, and more.
-          </p>
-        </div>
-        <div class="card card--info">
-          <h2 class="card__title">Course Information</h2>
-          <ul class="card__list">
-            <li class="card__item"><strong>Number of Units:</strong> 3</li>
-            <li class="card__item"><strong>Number of Skills:</strong> 30</li>
-            <li class="card__item"><strong>Time to Complete:</strong> 10 weeks</li>
-            <li class="card__item"><strong>Difficulty Level:</strong> Beginner</li>
-          </ul>
-        </div>
-        <div class="card card--info">
-          <h2 class="card__title">Course Requirements</h2>
-          <ul class="card__list">
-            <li class="card__item">Basic Math Knowledge</li>
-            <li class="card__item">Access to Computer and Internet</li>
-          </ul>
-        </div>
-      </div>
-    </main>
-  </body>
+<html>
+<head>
+	<title>Algebra Course</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		header {
+			background-color: #0077b6;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 36px;
+			font-weight: bold;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.course-description {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 30px 0 0 30px;
+			width: 60%;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		.course-info {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 30px 30px 0 0;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			width: 30%;
+		}
+		.course-info h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		.course-info p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 10px 0;
+		}
+		.curriculum {
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 30px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			width: 100%;
+		}
+		.curriculum h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.unit {
+			border-top: 1px solid #ccc;
+			margin-top: 20px;
+			padding-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.unit h3 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: 0;
+			margin-bottom: 10px;
+			flex-basis: 100%;
+		}
+		.skill {
+			flex-basis: calc(33.33% - 10px);
+			flex-grow: 1;
+			padding: 10px;
+			margin-bottom: 10px;
+			background-color: #eee;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			text-align: center;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			transition: all 0.3s ease-in-out;
+		}
+		.skill:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		}
+		@media screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+			}
+			.course-description, .course-info, .curriculum {
+				width: 100%;
+				margin: 30px 0;
+			}
+		}
+		.playful {
+			background-color: #ffbf00;
+			color: #fff;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 5px;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			z-index: 9999;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		.playful:hover {
+			transform: scale(1.1);
+			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<header>Algebra Course</header>
+	<div class="container">
+		<div class="course-description">
+			<h1>Course Description</h1>
+			<p>This algebra course is designed for beginners who are looking to improve their understanding of fundamental algebra concepts. The course includes 3 units with 10 skills per unit to help you build a strong foundation in algebra. You will learn how to solve linear equations, graph quadratic equations, and factor polynomials.</p>
+		</div>
+		<div class="course-info">
+			<h2>Course Info</h2>
+			<p><strong>Number of Units:</strong> 3</p>
+			<p><strong>Number of Skills:</strong> 30</p>
+			<p><strong>Time to Complete:</strong> 10 weeks</p>
+			<p><strong>Difficulty Level:</strong> Beginner</p>
+		</div>
+	</div>
+	<div class="curriculum">
+		<h2>Curriculum</h2>
+		<div class="unit">
+			<h3>Unit 1 - Linear Equations</h3>
+			<div class="skills">
+				<div class="skill">Solve one-step linear equations</div>
+				<div class="skill">Solve two-step linear equations</div>
+				<div class="skill">Solve multi-step linear equations</div>
+				<div class="skill">Solve equations with variables on both sides</div>
+				<div class="skill">Solve literal equations</div>
+				<div class="skill">Solve word problems involving linear equations</div>
+				<div class="skill">Graph linear equations in two variables</div>
+				<div class="skill">Find slope and y-intercept from an equation</div>
+				<div class="skill">Find the equation of a line given slope and y-intercept</div>
+				<div class="skill">Find the equation of a line given two points</div>
+			</div>
+		</div>
+		<div class="unit">
+			<h3>Unit 2 - Quadratic Equations</h3>
+			<div class="skills">
+				<div class="skill">Solve quadratic equations by factoring</div>
+				<div class="skill">Solve quadratic equations by completing the square</div>
+				<div class="skill">Solve quadratic equations by using the quadratic formula</div>
+				<div class="skill">Solve word problems involving quadratic equations</div>
+				<div class="skill">Graph quadratic equations in two variables</div>
+				<div class="skill">Find the vertex and axis of symmetry of a quadratic equation</div>
+				<div class="skill">Find the maximum or minimum value of a quadratic equation</div>
+				<div class="skill">Solve problems involving maximum or minimum value of a quadratic equation</div>
+				<div class="skill">Use quadratic equations to model real-world situations</div>
+				<div class="skill">Understand the discriminant and its significance</div>
+			</div>
+		</div>
+		<div class="unit">
+			<h3>Unit 3 - Polynomials</h3>
+			<div class="skills">
+				<div class="skill">Identify monomials, binomials, and polynomials</div>
+				<div class="skill">Add and subtract polynomials</div>
+				<div class="skill">Multiply polynomials using FOIL method</div>
+				<div class="skill">Multiply polynomials using distributive method</div>
+				<div class="skill">Factor trinomials with leading coefficient 1</div>
+				<div class="skill">Factor trinomials with leading coefficient not equal to 1</div>
+				<div class="skill">Factor perfect square trinomials</div>
+				<div class="skill">Factor the difference of two squares</div>
+				<div class="skill">Solve word problems involving polynomials</div>
+				<div class="skill">Understand the relationship between roots and factoring</div>
+			</div>
+		</div>
+	</div>
+	<button class="playful">Enroll Now</button>
+	<script>
+		document.querySelector('.playful').addEventListener('click', () => {
+			alert('Congratulations! You have enrolled in the Algebra Course.');
+		});
+	</script>
+</body>
 </html>
