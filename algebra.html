@@ -73,6 +73,7 @@
 		.unit h3 {
 			font-size: 20px;
 			font-weight: bold;
+      cursor: pointer;
 			margin-top: 0;
 			margin-bottom: 10px;
 			flex-basis: 100%;
@@ -94,19 +95,15 @@
 			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 		}
 
-    .unit h3 {
-  cursor: pointer;
-}
+    .unit .skills {
+      display: none;
+    }
 
-.unit .skills {
-  display: none;
-}
-
-.unit .skills.show {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+    .unit .skills.show {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }   
 
 		@media screen and (max-width: 768px) {
 			.container {
