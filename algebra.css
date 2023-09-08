@@ -100,7 +100,6 @@ h1 {
   display: none;
 }
 
-
 /* NEW */
 .course-info {
   margin: 2rem 0;
@@ -116,23 +115,4 @@ h1 {
   margin: 0.5rem 0;
   color: #4a5568;
   font-size: 1.3rem;
-}
-/* END NEW */
-
-@media screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .about-course {
-    max-width: calc(50% - 1rem);
-    margin-right: 1rem;
-  }
-
-  .curriculum {
-    max-width: calc(50% - 1rem);
-    margin-left: 1rem;
-  }
 }
