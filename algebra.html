@@ -137,7 +137,7 @@
 		<div class="unit">
 			<h3>Unit 1 - Linear Equations</h3>
 			<div class="skills">
-				<div class="skill">Solve one-step linear equations</div>
+				<a href="https://scholaracademy.pages.dev/skill_Solve_one-step_linear_equations.html"><div class="skill">Solve one-step linear equations</div></a>
 				<div class="skill">Solve two-step linear equations</div>
 				<div class="skill">Solve multi-step linear equations</div>
 				<div class="skill">Solve equations with variables on both sides</div>
@@ -194,19 +194,5 @@
     });
   });
 </script>
-<script>
-  // get all the skills
-  const skills = document.querySelectorAll(".skill");
 
-  // add click event listener to each skill
-  skills.forEach((skill) => {
-    skill.addEventListener("click", () => {
-      // get the skill name and replace spaces with underscores
-      const skillName = skill.textContent.trim().replace(/\s+/g, "_");
-
-      // navigate to the skill page using the skill name in the URL
-      window.location.href = `skill_${skillName}.html`;
-    });
-  });
-</script>
 </html>
