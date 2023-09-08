@@ -69,9 +69,23 @@ body {
   margin-bottom: 10px;
 }
 
+.unit-container {
+  display: flex;
+  justify-content: center;
+}
+
 .unit {
   cursor: pointer;
   margin-bottom: 20px;
+  width: 80%;
+  max-width: 600px; /* optional, to limit the width of the units */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.unit h3 {
+  margin: 0;
 }
 
 .unit .toggle {
