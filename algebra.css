@@ -100,40 +100,6 @@ h1 {
   display: none;
 }
 
-.plus-minus {
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  top: 50%;
-  right: 1.5rem;
-  transform: translateY(-50%);
-  color: #CBD5E0;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.plus-minus:hover {
-  color: #3182CE;
-}
-
-.open .plus-minus {
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.open .plus-minus::before,
-.open .plus-minus::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  border-bottom: 2px solid #3182CE;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.open .plus-minus::after {
-  transform: translateY(-50%) rotate(90deg);
-}
 
 /* NEW */
 .course-info {
