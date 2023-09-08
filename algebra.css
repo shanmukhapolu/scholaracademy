@@ -58,8 +58,8 @@ h1 {
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
+  margin:100px;
   padding: 20px;
-  width:2200px;
 }
 
 .unit {
