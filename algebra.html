@@ -1,97 +1,284 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Scholar Academy |  Algebra</title>
-    <link rel="stylesheet" href="algebra.css">
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/fLqQw7WM/Screenshot-2023-03-12-120220-removebg-preview.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+<head>
+  <title>Algebra Course</title>
+  <style>
+    body {
+      background-color: #F1F5F9;
+      font-family: "Roboto", sans-serif;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(133, 133, 133, 0.3);
+      padding: 1rem;
+    }
+
+    h1 {
+      color: #102a43;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .container {
+      padding: 0 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-course {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-course img {
+      height: auto;
+      max-width: 100%;
+      margin-right: 2rem;
+    }
+
+    .about-course h2 {
+      font-size: 1.5rem;
+      color: #102a43;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    .about-course p {
+      color: #48515E;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .curriculum {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
+      padding: 2rem;
+    }
+
+    .unit {
+      background-color: #f7fafc;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .unit h3 {
+      color: #102a43;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .unit h3 span {
+      color: #48515E;
+      font-size: 1.1rem;
+      font-weight: normal;
+      margin-left: 1rem;
+    }
+
+    .skill {
+      color: #4a5568;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      margin: 1rem 0 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .skill:hover {
+      color: #3182CE;
+    }
+
+    .collapsed .skill {
+      display: none;
+    }
+
+    .plus-minus {
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      transform: translateY(-50%);
+      color: #CBD5E0;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .plus-minus:hover {
+      color: #3182CE;
+    }
+
+    .open .plus-minus {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .open .plus-minus::before,
+    .open .plus-minus::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-bottom: 2px solid #3182CE;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    .open .plus-minus::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    /* NEW */
+    .course-info {
+      margin: 2rem 0;
+    }
+
+    .course-info p {
+      margin: 0.5rem 0;
+      color: #718096;
+      font-size: 1.2rem;
+    }
+
+    .course-info h4 {
+      margin: 0.5rem 0;
+      color: #4a5568;
+      font-size: 1.3rem;
+    }
+    /* END NEW */
+
+    @media screen and (min-width: 768px) {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .about-course {
+        max-width: calc(50% - 1rem);
+        margin-right: 1rem;
+      }
+
+      .curriculum {
+        max-width: calc(50% - 1rem);
+        margin-left: 1rem;
+      }
+    }
+  </style>
 </head>
-  <body>
-    <nav>
-  <a style="text-decoration: none; color:black;" class="logo" href="https://scholaracademy.pages.dev/">
-    <img src="https://i.postimg.cc/fLqQw7WM/Screenshot-2023-03-12-120220-removebg-preview.png" alt="Academic Hub Logo">
-    <span class="workmark">Scholar Academy</span>
-  </a>
-  <ul class="navbar-items">
-    <li><a id="about-item" href="https://scholaracademy.pages.dev/about.html">About</a></li>
-    <li><a id="math-item" href="https://scholaracademy.pages.dev/math.html">Math</a></li>
-    <li><a id="science-item" href="https://scholaracademy.pages.dev/science.html">Science</a></li>
-    <li><a id="reading-writing-item" href="https://scholaracademy.pages.dev/reading-writing.html">Reading & Writing</a></li>
-    <li><a id="homework-help-item" href="https://scholaracademy.pages.dev/homework-help.html">Homework Help</a></li>
-    <li><a id="test-prep-item" href="https://scholaracademy.pages.dev/test-prep.html">Test Prep</a></li>
-  </ul>
-  <button class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
-</nav>
-    <div id="algebra-heading">
-      <h1>Learn Algebra</h1>
+
+<body>
+  <header>
+    <h1>Algebra Course</h1>
+  </header>
+
+  <div class="container">
+    <div class="about-course">
+      <img src="https://via.placeholder.com/400x300" alt="Algebra Course">
+      <div>
+        <h2>About the Course</h2>
+        <p>This is an Algebra course for beginners. It covers the fundamental concepts of algebra and provides practice exercises to reinforce understanding.</p>
+        <p>By the end of the course, students should be comfortable working with algebraic expressions, solving equations and inequalities, and graphing linear functions.</p>
+        <p>Prerequisites: Basic Math knowledge</p>
+      </div>
     </div>
 
-<div class="card">
-  <h2>Algebra</h2>
-  <p>Algebra is a foundational branch of mathematics that introduces us to the concept of variables and equations. It deals with solving mathematical expressions using symbols and solving for unknown values. Algebra also helps us in analyzing patterns, relations, and functions, making it an essential skill in various fields such as physics, engineering, finance, and computer science. The principles of algebra help us to understand the world around us and develop critical thinking skills. At its core, algebra is a versatile, powerful tool that allows us to approach and solve complex problems with ease.</p>
-</div>
-
-<div class="info-cards">
-  <div class="info-card">
-    <h3>10 units</h3>
-  </div>
-  <div class="info-card">
-    <h3>100 skills</h3>
-  </div>
-  <div class="info-card">
-    <h3>120 hours</h3>
-  </div>
-  <div class="info-card">
-    <h3>Intermediate level</h3>
-  </div>
-</div>
-
-<div class="units">
-  <div class="unit-container">
-    <div class="unit">
-      <div class="toggle">+</div>
-      <h3>Unit 1: Introduction to Algebra</h3>
-      <ol class="skills">
-        <li>Order of operations</li>
-        <li>Expressions and equations</li>
-        <li>Variables and constants</li>
-        <li>Linear equations</li>
-        <li>Quadratic equations</li>
-        <li>Rational equations</li>
-        <li>Exponential equations</li>
-        <li>Logarithmic equations</li>
-        <li>Solving equations graphically</li>
-        <li>Applications of algebraic equations</li>
-      </ol>
+    <div class="curriculum">
+      <div class="course-info">
+        <h4>Course Information</h4>
+        <!-- NEW -->
+        <p>Number of Units: 3</p>
+        <p>Number of Skills: 30</p>
+        <p>Time to Complete: 10 weeks</p>
+        <p>Difficulty Level: Beginner</p>
+        <!-- END NEW -->
+      </div>
+      <div class="unit">
+        <div class="plus-minus"></div>
+        <h3>Unit 1 - Algebraic Expressions <span>(10 lessons)</span></h3>
+        <div class="skills collapsed">
+          <a href="#" class="skill">Simplifying expressions</a>
+          <a href="#" class="skill">Evaluating expressions</a>
+          <a href="#" class="skill">Translating words to expressions</a>
+          <a href="#" class="skill">Combining like terms</a>
+          <a href="#" class="skill">Distributive property</a>
+          <a href="#" class="skill">Factoring expressions</a>
+          <a href="#" class="skill">Solving equations with one variable</a>
+          <a href="#" class="skill">Solving problems with two variables</a>
+          <a href="#" class="skill">Writing equations to solve word problems</a>
+          <a href="#" class="skill">Working with exponents and radicals</a>
+        </div>
+      </div>
+      <div class="unit">
+        <div class="plus-minus"></div>
+        <h3>Unit 2 - Equations and Inequalities <span>(12 lessons)</span></h3>
+        <div class="skills collapsed">
+          <a href="#" class="skill">Solving linear equations with one variable</a>
+          <a href="#" class="skill">Solving systems of linear equations</a>
+          <a href="#" class="skill">Solving equations with fractions and decimals</a>
+          <a href="#" class="skill">Solving quadratic equations by factoring</a>
+          <a href="#" class="skill">Understanding and graphing inequalities</a>
+          <a href="#" class="skill">Solving systems of linear inequalities</a>
+          <a href="#" class="skill">Working with absolute value equations and inequalities</a>
+          <a href="#" class="skill">Solving rational equations</a>
+          <a href="#" class="skill">Solving radical equations and inequalities</a>
+          <a href="#" class="skill">Applying equations and inequalities in real-life situations</a>
+          <a href="#" class="skill">Working with word problems</a>
+          <a href="#" class="skill">Reviewing for the test</a>
+        </div>
+      </div>
+      <div class="unit">
+        <div class="plus-minus"></div>
+        <h3>Unit 3 - Graphing Linear Functions <span>(8 lessons)</span></h3>
+        <div class="skills collapsed">
+          <a href="#" class="skill">Graphing linear equations</a>
+          <a href="#" class="skill">Finding slope and y-intercept</a>
+          <a href="#" class="skill">Using the slope-intercept form</a>
+          <a href="#" class="skill">Finding equations of lines</a>
+          <a href="#" class="skill">Using functions to model real-life problems</a>
+          <a href="#" class="skill">Solving linear systems by graphing</a>
+          <a href="#" class="skill">Understanding and graphing inequalities</a>
+          <a href="#" class="skill">Solving systems of inequalities by graphing</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="unit-container">
-    <div class="unit">
-      <div class="toggle">+</div>
-      <h3>Unit 2: Algebraic Manipulation</h3>
-      <ol class="skills">
-        <li>Factoring expressions</li>
-        <li>Completing the square</li>
-        <li>Using the quadratic formula</li>
-        <li>Roots and radicals</li>
-        <li>Simplifying complex expressions</li>
-        <li>Expanding and simplifying polynomials</li>
-        <li>Binomial theorem</li>
-        <li>Partial fraction decomposition</li>
-        <li>Applications of algebraic manipulation</li>
-      </ol>
-    </div>
-  </div>
-  <!-- add more unit containers here -->
-</div>
 
-  </body>
-  <script src="algebra.js"></script>
+  <script>
+    var units = document.querySelectorAll(".unit");
+
+    for (var i = 0; i < units.length; i++) {
+      units[i].addEventListener("click", function() {
+        this.classList.toggle("open");
+        var skills = this.querySelector(".skills");
+        if (skills) {
+          skills.classList.toggle("collapsed");
+          var plusMinus = this.querySelector(".plus-minus");
+          if (plusMinus) {
+            plusMinus.classList.toggle("open");
+          }
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
