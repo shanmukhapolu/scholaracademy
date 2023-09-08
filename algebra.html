@@ -93,6 +93,21 @@
 			transform: translateY(-5px);
 			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 		}
+
+    .unit h3 {
+  cursor: pointer;
+}
+
+.unit .skills {
+  display: none;
+}
+
+.unit .skills.show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 		@media screen and (max-width: 768px) {
 			.container {
 				flex-direction: column;
@@ -171,8 +186,14 @@
 	
 </body>
 <script>
-  document.querySelector('.playful').addEventListener('click', () => {
-    alert('Congratulations! You have enrolled in the Algebra Course.');
+  // get all the unit headings
+  const unitHeadings = document.querySelectorAll(".unit h3");
+
+  // add click event listener to each unit heading
+  unitHeadings.forEach((heading) => {
+    heading.addEventListener("click", () => {
+      heading.nextElementSibling.classList.toggle("show");
+    });
   });
 </script>
 </html>
