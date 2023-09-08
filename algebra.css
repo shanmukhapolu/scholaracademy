@@ -1,123 +1,20 @@
-body {
-  background-color: #F1F5F9;
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(133, 133, 133, 0.3);
-  padding: 1rem;
-}
-
-h1 {
-  color: #102a43;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .container {
-  padding: 0 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px auto;
+	width: 80%;
 }
 
-.about-course {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
-  padding: 2rem;
-  display: flex;
-  flex: 1;
-  margin-right: 1rem;
-  justify-content: space-between;
-  align-items: center;
+.card {
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	border-radius: 5px;
+	flex-basis: 45%;
 }
 
-.about-course img {
-  height: auto;
-  max-width: 100%;
-  margin-right: 2rem;
-}
-
-.about-course h2 {
-  font-size: 1.5rem;
-  color: #102a43;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.about-course p {
-  color: #48515E;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.curriculum {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(133, 133, 133, 0.1);
-  margin:20px;
-  padding:20px;
-}
-
-.unit {
-  background-color: #d2edff;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
-  position: relative;
-}
-
-.unit h3 {
-  color: #102a43;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skill {
-  color: #3a3a3a;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: block;
-  margin: 1rem 0 0;
-  transition: all 0.2s ease-in-out;
-}
-
-.skill:hover {
-  color: #3182CE;
-}
-
-.collapsed .skill {
-  display: none;
-}
-
-/* NEW */
-.course-info {
-  flex: 1;
-  margin-left: 1rem;
-}
-
-.course-info p {
-  margin: 0.5rem 0;
-  color: #718096;
-  font-size: 1.2rem;
-}
-
-.course-info h4 {
-  margin: 0.5rem 0;
-  color: #4a5568;
-  font-size: 1.3rem;
+.info {
+	display: flex;
+	flex-direction: column;
 }
