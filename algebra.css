@@ -63,7 +63,7 @@ h1 {
 }
 
 .unit {
-  background-color: #f7fafc;
+  background-color: #d2edff;
   border-radius: 0.5rem;
   cursor: pointer;
   margin-bottom: 1rem;
@@ -80,13 +80,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.unit h3 span {
-  color: #48515E;
-  font-size: 1.1rem;
-  font-weight: normal;
-  margin-left: 1rem;
 }
 
 .skill {
