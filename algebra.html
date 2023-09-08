@@ -194,4 +194,19 @@
     });
   });
 </script>
+<script>
+  // get all the skills
+  const skills = document.querySelectorAll(".skill");
+
+  // add click event listener to each skill
+  skills.forEach((skill) => {
+    skill.addEventListener("click", () => {
+      // get the skill name and replace spaces with underscores
+      const skillName = skill.textContent.trim().replace(/\s+/g, "_");
+
+      // navigate to the skill page using the skill name in the URL
+      window.location.href = `skill_${skillName}.html`;
+    });
+  });
+</script>
 </html>
