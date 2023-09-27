@@ -198,4 +198,6 @@ nav {
   background-color: white;
   color:black;
   transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+
 }
