@@ -198,3 +198,15 @@ nav {
   background-color: white;
   transition: background-color 1s ease;
 }
+
+.unsticky {
+  position: absolute;
+  top: -100px; /* move the navbar off screen */
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+.unsticky.show {
+  top: 0;
+  opacity: 1;
+}
