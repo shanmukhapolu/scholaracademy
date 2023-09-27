@@ -4,12 +4,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  padding-right:20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.211);
   margin-top:-8px;
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 .logo {
