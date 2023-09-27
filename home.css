@@ -175,7 +175,7 @@ nav {
 @keyframes fadeInFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 
   100% {
