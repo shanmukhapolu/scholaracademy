@@ -155,6 +155,8 @@ nav {
   text-align:center;
   font-family:Manrope;
   background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-abstract-background-glassmorphism-pastel-color-image_908574.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
