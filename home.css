@@ -151,12 +151,12 @@ nav {
 }
 
 .content {
-  padding:50px;
+  padding:80px;
   font-family:Manrope;
 }
 
 #main-heading {
-  font-size:100px;
+  font-size:75px;
   animation-name: fadeInFromBottom;
   animation-duration: 2s;
 }
