@@ -154,13 +154,14 @@ nav {
   padding:80px;
   text-align:center;
   font-family:Manrope;
-  margin-top: -65px;
 }
+
 #nav-header {
   background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/620bd6d655f2044afa28bff4_glassmorphism.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
 }
 
 #title {
