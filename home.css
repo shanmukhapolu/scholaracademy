@@ -163,13 +163,13 @@ nav {
   background-size: cover;
 }
 
-#main-heading {
+#title {
   font-size:75px;
   animation-name: fadeInFromBottom;
   animation-duration: 2s;
 }
 
-#main-description {
+#description {
   animation-name: fadeInFromBottom;
   animation-duration: 2s;
 }
