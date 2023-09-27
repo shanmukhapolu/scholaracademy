@@ -163,6 +163,11 @@ nav {
   animation-duration: 2s;
 }
 
+#main-description {
+  animation-name: fadeInFromBottom;
+  animation-duration: 2s;
+}
+
 @keyframes fadeInFromBottom {
   0% {
     opacity: 0;
