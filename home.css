@@ -155,10 +155,11 @@ nav {
 
 .content {
   padding:80px;
-  padding-top: 130px; 
+  padding-top: 100px; 
   text-align:center;
   font-family:Manrope;
   color:white;
+  margin-top:-8px;
 }
 
 #nav-header {
