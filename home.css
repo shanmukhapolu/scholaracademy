@@ -156,6 +156,7 @@ nav {
 }
 
 #main-heading {
+  font-size:100px;
   animation-name: fadeInFromBottom;
   animation-duration: 2s;
 }
