@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   width:99%;
+  transition: 2s;
 }
 
 .logo {
