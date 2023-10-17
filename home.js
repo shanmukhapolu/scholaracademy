@@ -22,8 +22,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById("nav").style.background = " #00000045";
+    document.getElementById("nav").style.background = " rgb(0,0,0,0.3)";
   } else {
-    document.getElementById("nav").style.background = " #00000000";
+    document.getElementById("nav").style.background = " rgb(0,0,0,0)";
   }
 }
