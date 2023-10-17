@@ -1,10 +1,10 @@
 nav {
-  background-color: #00000009;
+  background-color: #00000015;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.211);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.311);
   margin-top:-8px;
   position: fixed;
   top: 0;
